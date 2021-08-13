@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="button_size">120dp</dimen>
+   <dimen name="icon_size">96dp</dimen>
+   <dimen name="avatar_size">144dp</dimen>
+   <dimen name="settings_button_size">72dp</dimen>
+   <dimen name="edit_avatar_button_size">48dp</dimen>
+   <dimen name="barcode_height">100dp</dimen>
+   <dimen name="barcode_width">300dp</dimen>
+</resources>
+
