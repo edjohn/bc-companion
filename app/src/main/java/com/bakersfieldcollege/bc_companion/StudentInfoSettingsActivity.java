@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class StudentInfoSettingsActivity extends AppCompatActivity
 {
@@ -14,6 +15,8 @@ public class StudentInfoSettingsActivity extends AppCompatActivity
     private EditText studentIdField;
     private EditText studentNameField;
     private EditText studentEmailField;
+
+    private ImageView avatarImageView;
 
     StudentInfo studentInfo;
 
@@ -46,6 +49,7 @@ public class StudentInfoSettingsActivity extends AppCompatActivity
         studentIdField = findViewById(R.id.student_id_field);
         studentNameField = findViewById(R.id.student_name_field);
         studentEmailField = findViewById(R.id.student_email_field);
+        avatarImageView = findViewById(R.id.avatar_imageview);
     }
 
     private void updateViews()
@@ -57,6 +61,8 @@ public class StudentInfoSettingsActivity extends AppCompatActivity
         studentIdField.setText(studentIdInput);
         studentNameField.setText(studentNameInput);
         studentEmailField.setText(studentEmailInput);
+
+        avatarImageView.setImageResource(R.drawable.person_icon);
     }
 
     private void saveInput()

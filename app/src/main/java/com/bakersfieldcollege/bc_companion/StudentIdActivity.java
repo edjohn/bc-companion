@@ -22,6 +22,7 @@ public class StudentIdActivity extends AppCompatActivity
     private TextView student_name_textview;
     private TextView student_email_textview;
     private ImageView barcode_imageview;
+    private ImageView avatar_imageview;
 
     private StudentInfo studentInfo;
 
@@ -56,6 +57,7 @@ public class StudentIdActivity extends AppCompatActivity
         student_name_textview = findViewById(R.id.student_name_textview);
         student_email_textview = findViewById(R.id.student_email_textview);
         barcode_imageview = findViewById(R.id.barcode_imageview);
+        avatar_imageview = findViewById(R.id.avatar_imageview);
     }
 
     private void setViews()
@@ -71,6 +73,7 @@ public class StudentIdActivity extends AppCompatActivity
         {
             barcode_imageview.setImageBitmap(generateBarcodeBitmap(studentId));
         }
+        avatar_imageview.setImageResource(R.drawable.person_icon);
     }
 
 
@@ -90,7 +93,6 @@ public class StudentIdActivity extends AppCompatActivity
             e.printStackTrace();
         }
         BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
-        Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
-        return bitmap;
+        return barcodeEncoder.createBitmap(bitMatrix);
     }
 }

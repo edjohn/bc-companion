@@ -62,18 +62,18 @@ public class StudentInfo
     public void setStudentId(String studentId)
     {
         editor.putString(studentIdKey, studentId).apply();
-        studentId = sharedPreferences.getString(studentIdKey, "");
+        this.studentId = sharedPreferences.getString(studentIdKey, "");
     }
 
     public void setStudentName(String studentName)
     {
         editor.putString(studentNameKey, studentName).apply();
-        studentName = sharedPreferences.getString(studentNameKey, "");
+        this.studentName = sharedPreferences.getString(studentNameKey, "");
     }
 
     public void setStudentEmail(String studentEmail)
     {
         editor.putString(studentEmailKey, studentEmail).apply();
-        studentEmail = sharedPreferences.getString(studentEmailKey, "");
+        this.studentEmail = sharedPreferences.getString(studentEmailKey, "");
     }
 }

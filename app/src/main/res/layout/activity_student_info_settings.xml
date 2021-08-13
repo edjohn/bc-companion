@@ -20,17 +20,6 @@
         app:layout_constraintVertical_bias="0.05"
         tools:srcCompat="@drawable/person_icon" />
 
-    <ImageButton
-        android:id="@+id/edit_avatar_imagebutton"
-        android:layout_width="@dimen/edit_avatar_button_size"
-        android:layout_height="@dimen/edit_avatar_button_size"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/round_button"
-        android:contentDescription="@string/edit"
-        app:layout_constraintBottom_toBottomOf="@+id/avatar_imageview"
-        app:layout_constraintStart_toEndOf="@+id/avatar_imageview"
-        app:srcCompat="@drawable/camera_icon" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/student_info_header_layout"
         android:layout_width="match_parent"
@@ -177,7 +166,7 @@
             android:background="?attr/editTextBackground"
             android:backgroundTint="@color/colorPrimary"
             android:hint="@string/student_email_hint"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:singleLine="true"
             android:textAlignment="viewStart"
             app:layout_constraintBottom_toBottomOf="parent"
